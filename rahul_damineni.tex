@@ -1,0 +1,174 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\centering\textbf{\href{https://www.linkedin.com/in/rahul-damineni/}{\Large Rahul Damineni}} \\
+\\
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  Email : \href{mailto:daminens@oregonstate.edu}{daminens@oregonstate.edu}  & Mobile : +1-541-905-1304\\ 
+  \href{https://www.github.com/RahulDamineni/}{github.com/RahulDamineni/} & \href{https://www.linkedin.com/in/rahul-damineni/}{linkedin.com/in/rahul-damineni/}
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Oregon State University}{Corvallis, OR}
+      {Master of Science in Computer Science;  GPA: \textcolor{OliveGreen}{3.74}}{September 2019 -- \textcolor{OliveGreen}{June 2021}}
+    \resumeSubheading
+      {Birla Institute of Technology and Science, Pilani}{Hyderabad, IN}
+      {Master of Science in Physics, Bachelor of Engineering in Electrical \& Electronics}{August 2011 -- July 2016}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {CloudSek}{Bangalore, IN}
+      {Sr. Machine Learning Engineer, MLE, CV Intern}{August 2016 - September 2018}
+      \resumeItemListStart
+        \resumeItem{Achievement}
+          {As one of the first employees, conceived and developed several high value features in the core product, contributed to forming the core team.}
+        \resumeItem{Fake Domain Finder}
+          {Discovered tens of malicious websites per month impersonating brands \& trademarks of clients by monitoring thousands of newly created websites everyday. Set up pipeline for scraping data, classifying visual and textual content using image processing and bag-of-words based SVM classifier and periodically monitoring the website for changes. \textcolor{RubineRed}{Python, Selenium, BeautifulSoup, MongoDB, OpenCV, Scikit-Learn}}
+        \resumeItem{Threat Detector}
+          {Classified and categoried thousands of tweets, forum \& blog posts to identify mentions related to vulnerabilities, data breaches and cyber threats. Engineered a Hierarchical Attention Based Recurrent Neural Network (RNN) to replace n-grams based model and increased the accuracy by 13\%. \textcolor{RubineRed}{Keras, NLTK, Pandas}}
+        \resumeItem{ML APIs as a service}
+          {Developed an async RESTful micro-service that hosts all ML models and serve classification requests. The architecuture was designed to accommodate A/B testing \& easily deploy new models. It uses publisher-subscriber model to decouple front-end and scale classification workers with requests volume. \textcolor{RubineRed}{RabbitMQ, MongoDB, Flask, NginX}}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {TheMathCompany}{Bangalore, IN}
+      {Associate}{September 2018 - April 2019}
+      \resumeItemListStart
+        \resumeItem{Achievement}
+          {Optimized a supply chain component at Kimberly Clark by collaborating with stakeholders and engineering team that would help bridge the gap in production goals and save \$15M annually.}
+        \resumeItem{Plan Rate Forecasting}
+          {To predict throughput of production mills, performed exploratory data analysis (EDA) to identify influential parameters, conceived and tested hypotheses, engineered features and trained a predictive model that forecasts rate with 7\% MSE. Packaged this model as a simulator for easy consumption. \textcolor{RubineRed}{Seaborn, Matplotlib, Pandas, Scikit-Learn, XGBoost, Jupyter Notebook}}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {UNAR Labs}{Portland, ME}
+      {AI/ML Research Intern}{June 2020 - Present}
+      \resumeItemListStart
+        \resumeItem{SAT PDF Digitalizer}
+          {To enable visually impaired users access SAT prepration material, developed a micro-service that digitalizes, indexes and exposes PDF contents for querying. \textcolor{RubineRed}{SQLAlchemy, SQLite, Flask, Tesseract OCR, Docker-Compose, GCP: Cloud Run, Container Registry}}
+        \resumeItem{Plot2Data}
+          {To communicate graphical data to visually imparied users, training a neural network to generate tabular data from images. Data is automatically generated using graphing libraries, augmented by extracting text using OCR, annotating textual regions and generating features using \textcolor{RubineRed}{BERT} \& \textcolor{RubineRed}{CNN} based encoders. \textcolor{RubineRed}{PyTorch, TorchVision, TorchText, Tensorboard}}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Anonymous Author Identifier}
+      {To identify latent clues in writing styles, trained an LSTM based binary classifier and a DBMS program that determines if a text is written by existing authors in DB. \textcolor{RubineRed}{PyTorch, TorchText, FastText, Spacy, Tensorboard}}
+    \resumeSubItem{Clip-tionary}
+      {To contextually convey the meaning of a word, shows scenes from TV shows and movies where it was uttered. \textcolor{RubineRed}{ReactJS, MongoDB - Full text search, Flask, Google Cloud Storage, Docker}}
+    \resumeSubItem{DARPA Subterranean Challenge}
+      {Trained a MobileNet with Single Shot Detector head to detect and localize the competition's artifacts with mAP of 58\% (@0.75 IoU). \textcolor{RubineRed}{Tensorflow, Object Detection API, Tensorboard, Docker, OpenCV, Slurm.}}
+    \resumeSubItem{Super Logger}
+      {Project planning and logistics management platform for road construction projects. Conceptualized and developed backend. ReactJS, \textcolor{RubineRed}{Python, Flask, MongoDB, Redis, Docker-Compose, AWS EC2, Lambda}}
+  \resumeSubHeadingListEnd
+
+
+%--------PROGRAMMING SKILLS------------
+\section{Skills \& Tools}
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Languages}{: Python, JavaScript, C}
+    }
+    \item{
+      \textbf{Frameworks}{: PyTorch, Scikit-Learn, OpenCV, Pandas, Tensorflow, ReactJS, Flask}
+    }
+    \item{
+      \textbf{Tools}{: Git, MongoDB, PostgreSQL, Docker, AWS EC2, DynamoDB, Selenium}
+    }
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
