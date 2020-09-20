@@ -1,7 +1,7 @@
-### Resume 
+## Resume 
 It makes use of the latex template and docker to create a pdf resume. It  is easy to keep track of and to modify.
 
-## Build using Docker
+### Build using Docker
 
 ```sh
 docker build -t latex .
